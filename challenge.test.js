@@ -10,8 +10,14 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
+    let arrStr=str.split('');
+    let reverseArray=arrStr.reverse()
+    let joinArr=reverseArray.join('');
+    return joinArr;
 
 };
+reverseString ('Hello World')
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -26,6 +32,10 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
+    // let maiddle=Math.ceil(arr.length/2);
+    // arr.split(maiddle,0 ,val);
+    arr.splice(3,0,"g")
+    return arr;
 
 };
 
